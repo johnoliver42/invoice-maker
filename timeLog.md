@@ -16,7 +16,7 @@
 |02/21/21|Week 5 Reading|5||
 |02/23/21|Week 6 Video |3||
 |02/26/21|Code reviews|2||
-|||||
+|02/28/21|Week 7 AWS Setup, LOMBOK Research||10|
 |||||
 |||||
 |||||
