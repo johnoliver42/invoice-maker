@@ -1,11 +1,16 @@
 package com.invoiceMaker.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.Columns;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 @Entity(name = "Invoice")
 @Table(name = "Invoice")
+@Getter
+@Setter
 public class Invoice {
 
     @Id
@@ -20,30 +25,48 @@ public class Invoice {
     @Column(name = "userInvoiceId")
     private int userInvoiceId;
 
-    private
+    @Column(name = "shipmentId")
+    private int shipmentId;
 
+    @Column(name = "createDate")
+    private java.sql.Date createDate; // TODO: Choose proper date type
 
-    public int getId() {
-        return id;
-    }
+    @Column(name = "lastUpdated")
+    private java.sql.Date lastUpdated; // TODO: Choose proper date type
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    @Column(name = "businessName")
+    private String businessName;
 
-    public Orders getOrder() {
-        return order;
-    }
+    @Column(name = "businessPhone")
+    private String businessPhone;
 
-    public void setOrder(Orders order) {
-        this.order = order;
-    }
+    @Column(name = "businessStreet1")
+    private String businessStreet1;
 
-    public int getInvoiceId() {
-        return invoiceId;
-    }
+    @Column(name = "businessStreet2")
+    private String businessStreet2;
 
-    public void setInvoiceId(int invoiceId) {
-        this.invoiceId = invoiceId;
-    }
+    @Column(name = "businessCity")
+    private String businessCity;
+
+    @Column(name = "businessState")
+    private String businessState;
+
+    @Column(name = "businessZip")
+    private String businessZip;
+
+    @Column(name = "businessEmail")
+    private String businessEmail;
+
+    @Column(name = "notes")
+    private String notes;
+
+    @Column(name = "subTotal")
+    private float subTotal;
+
+    @Column(name = "total")
+    private float total;
+
+    @Column(name = "tax")
+    private float tax;
 }

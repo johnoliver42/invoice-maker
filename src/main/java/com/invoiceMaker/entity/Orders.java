@@ -1,11 +1,10 @@
 package com.invoiceMaker.entity;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
-import javax.xml.namespace.QName;
-import java.util.HashSet;
-import java.util.Set;
+
 
 /**
  * Represents an Order that can have one or both
@@ -15,6 +14,8 @@ import java.util.Set;
  */
 @Entity(name = "Orders")
 @Table(name = "Orders")
+@Getter
+@Setter
 public class Orders {
 
     @Id
@@ -35,56 +36,5 @@ public class Orders {
     @JoinColumn(name = "users_id", referencedColumnName = "id")
     private User user;
 
-    public Orders() {
-    }
 
-    public Orders( Invoice invoice, User user) {
-
-        this.invoice = invoice;
-        this.user = user;
-    }
-
-    public Orders(Shipment shipment, User user) {
-        this.shipment = shipment;
-
-        this.user = user;
-    }
-
-    public Orders(Shipment shipment, Invoice invoice, User user) {
-        this.shipment = shipment;
-        this.invoice = invoice;
-        this.user = user;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Shipment getShipment() {
-        return shipment;
-    }
-
-    public void setShipment(Shipment shipment) {
-        this.shipment = shipment;
-    }
-
-    public Invoice getInvoice() {
-        return invoice;
-    }
-
-    public void setInvoice(Invoice invoice) {
-        this.invoice = invoice;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 }

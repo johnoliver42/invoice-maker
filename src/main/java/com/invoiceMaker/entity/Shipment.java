@@ -1,11 +1,15 @@
 package com.invoiceMaker.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 @Entity(name = "Shipment")
 @Table(name = "Shipment")
+@Getter
+@Setter
 public class Shipment {
 
     @Id
@@ -16,21 +20,5 @@ public class Shipment {
     @Column(name = "userShipmentId")
     private String userShipmentId;
 
-    private
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUserShipmentId() {
-        return userShipmentId;
-    }
-
-    public void setUserShipmentId(String userShipmentId) {
-        this.userShipmentId = userShipmentId;
-    }
 }
