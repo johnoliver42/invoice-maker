@@ -22,7 +22,7 @@ public class User {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
     @Column(name = "firstName")
-    private String fistName;
+    private String firstName;
     @Column(name = "lastName")
     private String lastName;
     @Column(name = "email")
@@ -52,7 +52,7 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param fistName     the fist name
+     * @param firstName     the fist name
      * @param lastName     the last name
      * @param email        the email
      * @param businessName the business name
@@ -62,8 +62,8 @@ public class User {
      * @param state        the state
      * @param postalCode   the postal code
      */
-    public User(String fistName, String lastName, String email, String businessName, String street1, String street2, String city, String state, String postalCode) {
-        this.fistName = fistName;
+    public User(String firstName, String lastName, String email, String businessName, String street1, String street2, String city, String state, String postalCode) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.businessName = businessName;
@@ -97,8 +97,8 @@ public class User {
      *
      * @return the fist name
      */
-    public String getFistName() {
-        return fistName;
+    public String getFirstName() {
+        return firstName;
     }
 
     /**
@@ -106,8 +106,8 @@ public class User {
      *
      * @param fistName the fist name
      */
-    public void setFistName(String fistName) {
-        this.fistName = fistName;
+    public void setFirstName(String fistName) {
+        this.firstName = fistName;
     }
 
     /**

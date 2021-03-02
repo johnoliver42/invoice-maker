@@ -38,7 +38,7 @@ class UserDaoTest {
 
         com.invoiceMaker.entity.User retrievedUser = userDao.getById(3);
         assertNotNull(retrievedUser);
-        assertEquals("Florine", retrievedUser.getFistName());
+        assertEquals("Florine", retrievedUser.getFirstName());
     }
 
     @Test
@@ -61,7 +61,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
         User insertedUser = userDao.getById(id);
         insertedUser.setId(0);
-        assertEquals(newUser.getFistName(), insertedUser.getFistName());
+        assertEquals(newUser.getFirstName(), insertedUser.getFirstName());
 
 
     }
@@ -101,7 +101,7 @@ class UserDaoTest {
                 , "00001");
 
         Shipment testShipment = new Shipment();
-        testShipment.setShipmentId(3);
+        testShipment.setUserShipmentId(3);
 
         com.invoiceMaker.entity.Invoice testInvoice = new com.invoiceMaker.entity.Invoice();
         testInvoice.setInvoiceId(3);
@@ -117,7 +117,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
 
         insertedUser.setId(0);
-        assertEquals(newUser.getFistName(), insertedUser.getFistName());
+        assertEquals(newUser.getFirstName(), insertedUser.getFirstName());
 
 
     }

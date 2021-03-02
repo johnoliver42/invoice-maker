@@ -1,6 +1,8 @@
 package com.invoiceMaker.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -10,4 +12,6 @@ import javax.persistence.Table;
 @Entity(name = "InvoiceLineItem")
 @Table(name = "Invoice_Line_Item")
 public class InvoiceLineItem {
+
+
 }

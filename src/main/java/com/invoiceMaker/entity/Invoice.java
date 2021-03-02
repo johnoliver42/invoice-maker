@@ -17,8 +17,10 @@ public class Invoice {
     @JoinColumn(name = "id")
     private Orders order;
 
-    @Column(name = "invoiceId")
-    private int invoiceId;
+    @Column(name = "userInvoiceId")
+    private int userInvoiceId;
+
+    private
 
 
     public int getId() {

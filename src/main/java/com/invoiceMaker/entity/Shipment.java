@@ -13,8 +13,10 @@ public class Shipment {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    @Column(name = "shipmentId")
-    private int shipmentId;
+    @Column(name = "userShipmentId")
+    private String userShipmentId;
+
+    private
 
     public int getId() {
         return id;
@@ -24,11 +26,11 @@ public class Shipment {
         this.id = id;
     }
 
-    public int getShipmentId() {
-        return shipmentId;
+    public String getUserShipmentId() {
+        return userShipmentId;
     }
 
-    public void setShipmentId(int shipmentId) {
-        this.shipmentId = shipmentId;
+    public void setUserShipmentId(String userShipmentId) {
+        this.userShipmentId = userShipmentId;
     }
 }
