@@ -14,17 +14,17 @@
 
 
 ### Week 4
-- [ ] Document application flow in text and pictures.
-- [ ] Complete database design
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
-- [ ] Create the test database
+- [ x] Document application flow in text and pictures.
+- [ x] Complete database design
+- [ x] Create the database and user table
+- [ x] Create the user entity class and annotate for hibernate
+- [ x] Create user dao
+- [ x] Create the test database
 - [ ] Create user dao unit tests
-- [ ] Weekly journal entry
-- [ ] Set up logging
+- [ x] Weekly journal entry
+- [ x] Set up logging
 - [ ] Create class uml diagram
-- [ ] Prepare for Week 5 peer design/code review
+- [ x] Prepare for Week 5 peer design/code review
 - [ ] Create header.jsp
 - [ ] Create footer.jsp
 
@@ -32,7 +32,7 @@
 ### Week 5
 
 - [ ] Create the template for all jsps using bootstrap or materialize
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 - [ ] Add the role table
 - [ ] Add the role entity
 - [ ] Create the role dao
@@ -45,12 +45,12 @@
 
 - [ ] Create db on AWS
 - [ ] Deploy to AWS for first time
-- [ ] Weekly journal entry
+- [ x] Weekly journal entry
 - [ ] Realize that these DAOS are repetitive. Refactor into a generic dao!
 - [ ] Add update and delete functionality in jsp for user
 - [ ] Add jsp to create an invoice
 - [ ] Add jsp to create a shipping label
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
+- [ x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
