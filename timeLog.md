@@ -18,8 +18,8 @@
 |02/26/21|Code reviews|2||
 |02/28/21|Week 7 AWS Setup, LOMBOK Research|10||
 |03/01/21|Altered database and updated Entities, Presentation|8||
-|03/01/21|Project Lombok Presentation|5||
-|||||
+|03/02/21|Project Lombok Presentation|5||
+|03/07/21|Week 7 Tomcat authentication|4||
 |||||
 |||||
 |||||
