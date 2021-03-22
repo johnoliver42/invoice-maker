@@ -20,8 +20,8 @@
 |03/01/21|Altered database and updated Entities, Presentation|8||
 |03/02/21|Project Lombok Presentation|5||
 |03/07/21|Week 7 Tomcat authentication|4||
-|||||
-|||||
+|03/14/21|Week 8 Activity|4||
+|03/21/21|Week 8 API Requests|9||
 |||||
 |||||
 
