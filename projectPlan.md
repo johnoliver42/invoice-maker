@@ -33,8 +33,8 @@
 
 - [ ] Create the template for all jsps using bootstrap or materialize
 - [x] Weekly journal entry
-- [ ] Add the role table
-- [ ] Add the role entity
+- [x] Add the role table
+- [x] Add the role entity
 - [ ] Create the role dao
 - [ ] Create the role dao unit tests
 - [ ] Add a jsp to display user
@@ -43,7 +43,7 @@
 
 ### Week 6
 
-- [ ] Create db on AWS
+- [x] Create db on AWS
 - [ ] Deploy to AWS for first time
 - [ x] Weekly journal entry
 - [ ] Realize that these DAOS are repetitive. Refactor into a generic dao!
@@ -55,7 +55,7 @@
 
 ### Week 7
 
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
 - [ ] Review and incorporate any feedback from Checkpoint 2.
@@ -63,7 +63,7 @@
 
 ### Week 8
 
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
