@@ -22,8 +22,8 @@
 |03/07/21|Week 7 Tomcat authentication|4||
 |03/14/21|Week 8 Activity|4||
 |03/21/21|Week 8 API Requests|9||
-|||||
-|||||
+|03/22/21|Individual Project|8||
+|03/23/21|Individual Project|5||
 |||||
 |||||
 |||||
