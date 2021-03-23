@@ -54,7 +54,7 @@ class UserDaoTest {
 
     @Test
     void insert() {
-
+        User newish = new User("","","","","","","","","");
 
         User newUser = new User("Fred", "Flintstone", "fflintstone@stoneage.com", "Construction", "101 Main St.", "", "New York", "NY", "00001");
         int id = userDao.insert(newUser);

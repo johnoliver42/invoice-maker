@@ -1,7 +1,6 @@
 package com.invoiceMaker.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 
@@ -16,9 +15,12 @@ import java.util.Set;
  * @author John Oliver
  */
 @Entity(name = "User")
-@Table(name = "Users")
+@Table(name = "User")
 @Getter
 @Setter
+@NoArgsConstructor
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
@@ -44,9 +46,13 @@ public class User {
     @Column(name = "postalCode")
     private String postalCode;
 
-    @OneToMany(  cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(  cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "users_id")
     private Set<com.invoiceMaker.entity.Orders> orders = new HashSet<>();
+
+    @OneToMany (cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id" )
+    private Set<com.invoiceMaker.entity.UserRoles> userRoles = new HashSet<>();
 
 
 

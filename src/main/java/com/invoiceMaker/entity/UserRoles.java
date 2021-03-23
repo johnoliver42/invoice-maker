@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 
 /**
- * Represents an
+ * Represents a user role
  *
  *
  * @author John Oliver
@@ -17,4 +17,18 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class UserRoles {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
+    private int id;
+
+    @Column(name = "user_name")
+    private String userName;
+
+    @Column(name = "role_name")
+    private String roleName;
+
+    @Column(name = "user_id")
+    private int userId;
 }

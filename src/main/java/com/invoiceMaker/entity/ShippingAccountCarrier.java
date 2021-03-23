@@ -16,4 +16,9 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class ShippingAccountCarrier {
+
+
+    private int shippingAccountUsers;
+
+    private int shippingCarrierId;
 }
